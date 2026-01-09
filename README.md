@@ -87,10 +87,10 @@ source myenv/bin/activate
 
 
 pip install -r requirements.txt
+
+
 Model Training
 Train the machine learning models and generate the model artifact:
-
-
 python src/train.py
 
 
@@ -104,9 +104,10 @@ Evaluates them using F1-score
 
 Saves the best-performing model as model.joblib
 
+
+
 API Deployment
 Start the FastAPI server:
-
 
 uvicorn app:app --reload
 
@@ -152,6 +153,8 @@ json
   "churn_prediction": 1,
   "churn_probability": 0.76
 }
+
+
 Model Explanation (Summary)
 Logistic Regression and Random Forest models were evaluated.
 
